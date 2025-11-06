@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini Games</h1>
+    <p>Выбери любую игру</p>
+  </header>
+
+  <main id="menu">
+    <button onclick="startGame('snake')"> Змейка </button>
+    <button onclick="startGame('pong')"> Пинг-Понг </button>
+    <button onclick="startGame('cube')"> Попробуй поймать кубик </button>
+  </main>
+
+  <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+  <button id="backBtn" onclick="backToMenu()"> Назад </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
